@@ -1,0 +1,80 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #f9f5e7;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.animated-header h1 {
+    font-size: 2.5rem;
+    color: #8b4513;
+    animation: slide-in 2s ease-out;
+}
+
+
+.animated-title {
+    color: #8b4513;
+    animation: fade-in 2s ease-in-out 1;
+}
+
+
+.animated-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    animation: grow 1.5s ease-in-out;
+}
+
+.animated-table th, .animated-table td {
+    border: 1px solid #8b4513;
+    padding: 10px;
+    text-align: center;
+}
+
+.animated-table th {
+    background-color: #f4a460;
+    color: #fff;
+}
+
+
+img {
+    width: 300px;
+    margin: 20px auto;
+    display: block;
+}
+
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
